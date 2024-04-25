@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/darkweb.css">
+    <title>Wall for cats</title>
+</head>
+<body>
+    <div id='preloader'>
+        <img src="img/preloader.gif" width="300" height="300">
+    </div>
+
+    <div class="container">
+        <h1>Wall for cats</h1>
+        <img src="img/cat-1.jpg" width="300" height="300">
+        <img src="img/cat-2.jpg" width='300' height="300">
+        <img src="img/cat-3.jpg" width="300" height="300">
+    </div>
+</body>
+
+<script>
+    window.onload = function() {
+        let preload_page = document.getElementById('preloader');
+        preload_page.classList.add('hidden');
+
+        setInterval(function () {
+            preload_page.classList.add('show');
+        },990)
+    }
+
+    $(document).ready(function() {
+        $('#preloader').fadeOut(400);
+    })
+</script>
+</html>
